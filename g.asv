@@ -1,0 +1,9 @@
+function out = g(h, beta, T)
+
+if h <= T
+    out = 0;
+elseif (T > h) && <= (T+1/beta)
+    out = beta * (h - T);
+elseif h > (T+1/beta)
+    out = 1;
+end
